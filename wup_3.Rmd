@@ -13,12 +13,16 @@ knitr::opts_chunk$set(echo = TRUE)
 require(tidyverse)
 require(tigerstats)
 davisdata <- read.csv(file="UCDavis.csv")
+data=davisdata
 ```
  Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
  you choose to sit in??
 
-
-
+# Introduction 
+The question is this: Is there a relationship between where you sit in class and how much you drink?  
+data from UCDavis math 116 class  
+$H_0$  is there is no relationship what row in class sit and how much you drink.  
+$H_A$  there is a difference in what row in class you sit and how much you drink.   
 
 ## Now add in boxplot
 
