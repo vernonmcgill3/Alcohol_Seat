@@ -24,11 +24,23 @@ data from UCDavis math 116 class
 $H_0$  is there is no relationship what row in class sit and how much you drink.  
 $H_A$  there is a difference in what row in class you sit and how much you drink.   
 
+
+# Methods 
+Seat is catagorical  
+Alcohol is numerical
+
+
+# data summary's 
+
+
+
 ## Now add in boxplot
 
-
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
   
-  
+  Graph demonstrates that if the student sit in the back they are more likely to consume more ounces of alcohol per week than those who sit in the front or middle. 
  
 
 
