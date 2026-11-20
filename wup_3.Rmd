@@ -55,6 +55,17 @@ The numerical summary shows us that the students who sit in the back of the clas
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The p value is 0.000116 which is less than 0.05 so we fail to reject the $H_0$ and conclude that there is a relationship between students who sit in the back and the consumption of ounces of alcohol per week.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+The tukey graph shows there is a difference in alcohol consumption between student who sit in the front and back and middle and back. There is no difference in alchohol consumption between the front and middle rows. 
+
 ## Conclusions
 
 
